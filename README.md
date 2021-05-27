@@ -23,8 +23,8 @@ detector)
 
 
 # Load face detector and predictor, uses dlib shape predictor file
-detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
+    detector = dlib.get_frontal_face_detector()
+    predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 
 # Extract indexes of facial landmarks for the left and right eye
 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS['left_eye']
