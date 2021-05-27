@@ -22,7 +22,7 @@ detector)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-# Load face detector and predictor, uses dlib shape predictor file
+# Load face detector and facial landmarks predictor using dlib shape predictor file
     detector = dlib.get_frontal_face_detector()
     predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 
@@ -30,7 +30,7 @@ detector)
     (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS['left_eye']
     (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS['right_eye']
 
-# After starting webcam Detect facial points 
+# After starting webcam Detect face and facial landmarks 
      faces = detector(gray, 0)
 
      shape = predictor(gray, face)
