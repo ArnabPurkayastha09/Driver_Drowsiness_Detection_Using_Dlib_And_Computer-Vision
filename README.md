@@ -5,7 +5,8 @@
 
 2.imutils (face_utils extract indexes of facial landmarks for the left and right eye)
 
-3.numpy()
+3.numpy(adding support for large, multi-dimensional arrays and matrices, along with a 
+large collection of high-level mathematical functions to operate on these arrays)
 
 4.pygame(will be used to paly alert)
 
@@ -13,7 +14,7 @@
 
 6.dlib(detect face and face landmarks in a frame)
 
-7.cv2()
+7.cv2( will be used to read, process, and display images)
 
 8.shape_predictor_68_face_landmarks.dat(dlib’s pre-trained facial landmark
 detector)
