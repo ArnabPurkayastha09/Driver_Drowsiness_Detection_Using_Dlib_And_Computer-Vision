@@ -27,14 +27,14 @@ detector)
     predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 
 # Extract indexes of facial landmarks for the left and right eye
-(lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS['left_eye']
-(rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS['right_eye']
+    (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS['left_eye']
+    (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS['right_eye']
 
 # After starting webcam Detect facial points 
-   faces = detector(gray, 0)
+     faces = detector(gray, 0)
 
-   shape = predictor(gray, face)
-   shape = face_utils.shape_to_np(shape)
+     shape = predictor(gray, face)
+     shape = face_utils.shape_to_np(shape)
 # Get array of coordinates of leftEye and rightEye
-   leftEye = shape[lStart:rEnd]
-   rightEye = shape[rStart:rEnd]
+     leftEye = shape[lStart:rEnd]
+     rightEye = shape[rStart:rEnd]
