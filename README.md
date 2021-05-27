@@ -8,7 +8,7 @@
 3.numpy(adding support for large, multi-dimensional arrays and matrices, along with a 
 large collection of high-level mathematical functions to operate on these arrays)
 
-4.pygame(will be used to paly alert)
+4.pygame(will be used to play alert)
 
 5.time(will be used for camera to initialize)
 
